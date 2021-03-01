@@ -23,6 +23,8 @@ Response_11:
 ```
 Request_21: GET: https://jsonplaceholder.typicode.com/comments?postId={{testID}}
 ```
+By Request_21: The Param `{{testID}}` should be all `userId` from `Response_11` above. (When we call `Request_11` by using a browser then we will become userId = 1 to 10).
+
 ## ==> Solution: ##
 
 Step 1. By Request_11 in section "Tests" we have to add this code:
