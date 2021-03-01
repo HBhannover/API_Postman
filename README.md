@@ -21,7 +21,7 @@ Response_11:
  ]   
 ```
 ```
-Request_21: GET: https://jsonplaceholder.typicode.com/comments?postId={{userId}}
+Request_21: GET: https://jsonplaceholder.typicode.com/comments?postId={{testID}}
 ```
 ## ==> Solution: ##
 
