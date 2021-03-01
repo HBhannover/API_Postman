@@ -25,7 +25,7 @@ Request_21: GET: https://jsonplaceholder.typicode.com/comments?postId={{testID}}
 ```
 ## ==> Solution: ##
 
-1. By Request_11 in section "Tests" we have to add this code:
+Step 1. By Request_11 in section "Tests" we have to add this code:
  ```  
     var responseBody = pm.response.json();
     var antwortArr = responseBody.map(function(item){
@@ -35,7 +35,7 @@ Request_21: GET: https://jsonplaceholder.typicode.com/comments?postId={{testID}}
    console.log("envVarArray: ",pm.environment.get("envVarArray"));
    ```
    
- 2. By Request_21 in section "Pre-request Script" we will add this code:
+ Step 2. By Request_21 in section "Pre-request Script" we will add this code:
  ```
    let envVarArr = pm.environment.get("envVarArray");
    pm.environment.set("testID",envVarArr.pop());
